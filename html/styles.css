@@ -1,0 +1,66 @@
+    section {
+      width: 30vw;
+      height: 30vh;
+      margin: auto;
+      margin-bottom: 15px;
+    
+    }
+
+    .other {
+      border-left: 15px;
+      border-right: 15px;
+    }
+
+    .africa {
+      border-top: 15px;
+      border-bottom: 15px;
+    }
+
+
+    .japan {
+      border: 1em ridge white;
+      background: radial-gradient(red 30%, white 10%);
+    }
+
+
+    .gambia {
+      border: 1em ridge white;
+      background: linear-gradient(180deg, red 33.3%, white 33.3%, white 38.3%, blue 38.3%, blue 61.6%, white 61.6%, white 66.6%, green 66.6%);
+    }
+
+    .germany {
+      border: 1em ridge white;
+      background: linear-gradient(180deg, black 33.3%, red 33.3%, red 66.6%, yellow 66.6%);
+    }
+
+    .gabon {
+      border: 1em ridge white;
+      background: linear-gradient(180deg, green 33%, yellow 33%, orange 67%, blue 67%);
+    }
+
+    .nigeria {
+      border: 1em ridge white;
+      background: linear-gradient(90deg, green 33%, white 33%, white 67%, green 67%);
+    }
+
+    .belgium {
+      border: 1em ridge white;
+      background: linear-gradient(90deg, black 33%, yellow 33%, yellow 67%, red 67%);
+    }
+
+    .france {
+      border: 1em ridge white;
+      background: linear-gradient(90deg, blue 33%, white 33%, white 67%, red 67%);
+    }
+    .china {
+      width: 300px;
+      height: 200px;
+      
+       background-image: url(./https://www.pngitem.com/pimgs/m/111-1111974_gold-star-png-download-gold-star-logo-png.png);
+          
+    }
+  
+
+   
+
+    

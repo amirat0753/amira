@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      list-style-type: none;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      height: 150px;
+      padding: 2rem;
+      justify-content: space-between;
+    }
+   nav ul li:nth-last-of-type(3n+1){
+      align-self: flex-start;
+    }
+    nav ul li:nth-last-of-type(3n+3){
+      align-self: flex-end;
+    }
+
+    main{
+      display: grid;
+      grid-template-columns: repeat(4,3fr);
+      grid-template-rows: 100px 100px;
+      grid-template-areas:"a a a b" "a a a b" "c c c d" "c c c d" "e e e e";
+      gap: 10px;
+
+    }
+    main > *{
+      background-color: blueviolet;
+      height: 50px;
+    }
+    main > :nth-of-type(1){
+      grid-area: a;
+    }
+    main > :nth-of-type(2){
+      grid-area: b;
+    }
+    main > :nth-of-type(3){
+      grid-area: c;
+    }
+    main > :nth-of-type(4){
+      grid-area: d;
+    }
+    main > :nth-of-type(5){
+     grid-area: e ;
+    }
+    div{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(1,200px);
+      gap: 10px;
+    }
+    div section:last-of-type{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1,200px);
+      gap: 10px;
+    }
+    div section:first-of-type{
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1,200px);
+      gap: 10px;
+
+    }
+
+
+     
+    
+    aside{
+      background-color: beige;
+      grid-area: d;
+    }
+    footer{
+      grid-area: e;
+      background-color: greenyellow;
+    }
+    article{
+      background-color: deeppink;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>home1</li>
+        <li>home 2</li>
+        <li>home 3</li>
+        <li>home 4</li>
+        <li>home 5</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>this is my first section</section>
+    <div>
+      <section>
+        <article>this is my first article in the second section</article>
+        <article>this is my second article inside my second section</article>
+      </section>
+      <section>
+        <article>this is my first article in my third section</article>
+        <article>this is my second article in my third section</article>
+        <article>this is my third article in my third section</article>
+      </section>
+    </div>
+    <aside>
+      <article>this is my first article inside my first aside</article>
+      <article>my second article inside my first aside</article>
+    </aside>
+    <aside>this is my second aside</aside>
+    <footer>this is my footer</footer>
+  </main>
+</body>
+</html>
